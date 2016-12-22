@@ -6,7 +6,7 @@ defmodule Sample.Lyrics do
     IO.puts("One bottle of milk on the wall, one bottle of milk!\n Take one down, pass it around.\n No more bottles of milk on the wall.")
   end
   defp get_sentence(number) do
-    IO.puts("#{number} bottles of milk on the wall, #{number} bottles of milk!\n Take one down, pass it around\n #{number-1} bottle of milk on the wall.")
+    IO.puts("#{number} bottles of milk on the wall, #{number} bottles of milk!\n Take one down, pass it around.\n #{number-1} bottle of milk on the wall.")
   end
 
   defp get_next_bottle(number) do # trash private function rn
