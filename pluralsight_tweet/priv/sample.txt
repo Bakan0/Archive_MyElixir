@@ -1,0 +1,9 @@
+Line 1
+Line 2
+A long string, needs to be longer than 140 characters. This is to test that our filter funciton works. If it does, this string will not appear. If it fails, we'll see this string.
+A third line
+This is a fake random line
+I want to add some for fun
+This is a test
+ELIXIR IS KING
+Ever played Reigns from Google Play store?
