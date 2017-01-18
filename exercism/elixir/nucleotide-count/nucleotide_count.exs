@@ -14,9 +14,10 @@ defmodule NucleotideCount do
   """
   @spec count([char], char) :: non_neg_integer
   def count(strand, nucleotide) do
-      String.graphemes(strand)
-  end
-
+    nucleotides = %{ ?A => 0, ?C => 0, ?G => 0, ?T => 0 }
+    Enum.reduce(strand, nucleotides, fn(x, acc) -> %{x => acc} end)
+    nucleotides[nucleotide]
+    end
 
   @doc """
   Returns a summary of counts by nucleotide.
